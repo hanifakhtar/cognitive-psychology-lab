@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#3157d7" />
+  <meta name="description" content="Cognitive Psychology Lab — enam eksperimen psikologi kognitif interaktif." />
+  <title>Cognitive Psychology Lab</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="config.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#home"><span class="brand-icon">✺</span><span>Cognitive <b>Psychology</b><small>VIRTUAL LAB · v2.0 HTML</small></span></a>
+      <div class="side-caption">LABORATORIUM</div>
+      <nav id="side-nav" aria-label="Navigasi utama">
+        <button data-page="home" class="nav-btn active"><span>⌂</span> Beranda</button>
+        <button data-page="stroop" class="nav-btn"><span>🎨</span> Stroop</button>
+        <button data-page="wm" class="nav-btn"><span>🧠</span> Working Memory</button>
+        <button data-page="vs" class="nav-btn"><span>🔎</span> Visual Search</button>
+        <button data-page="bias" class="nav-btn"><span>🎲</span> Cognitive Biases</button>
+        <button data-page="tfs" class="nav-btn"><span>⚡</span> Fast & Slow</button>
+        <button data-page="sp" class="nav-btn"><span>📚</span> Serial Position</button>
+        <div class="nav-divider"></div>
+        <button data-page="summary" class="nav-btn"><span>▥</span> Ringkasan Sesi</button>
+        <button data-page="class" class="nav-btn"><span>♧</span> Mode Kelas</button>
+        <button data-page="about" class="nav-btn"><span>ⓘ</span> Tentang</button>
+      </nav>
+      <div class="side-bottom"><div id="side-progress">0 dari 6 lab selesai</div><div class="progress-track"><div id="side-progress-bar" class="progress-fill"></div></div><p>Demonstrasi pembelajaran, bukan asesmen diagnostik.</p></div>
+    </aside>
+    <div class="main-column">
+      <header class="topbar"><button id="menu-toggle" class="icon-button" aria-label="Buka menu">☰</button><div id="breadcrumb">Cognitive Psychology Lab / Beranda</div><div class="top-actions"><span class="chip"><span class="status-dot"></span> Browser based</span><button id="theme-toggle" class="icon-button" aria-label="Ganti tema">◐</button></div></header>
+      <main id="app" tabindex="-1"></main>
+      <footer class="footer">Cognitive Psychology Lab · Pembelajaran psikologi kognitif · Data kelas dikirim hanya dengan persetujuan</footer>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
